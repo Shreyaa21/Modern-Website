@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+#minicircle{
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) 0.78s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.bounding{
+    width: fit-content;
+    /* background-color: rgb(233, 37, 63); */
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+} 
+
+#main {
+    width: 100%;
+    /* no height because meri website ki 
+    height can keep on changing, whereas width would not */
+    background-color: black;
+}
+
+#hero {  
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+
+#nav {
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;;
+}
+
+#heading{
+    margin-top: 97px;
+}
+
+#heading h1 {
+    font-size: 9vw;
+    opacity: 0.56;
+    margin-left: 30px;
+    font-family: "General Sans";
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: rgb(150, 91, 91) 1px 0 10px;
+    
+}
+
+#heading #secondH1{   
+    margin-left: 120px;
+}
+
+.blocktext{
+    display: flex;
+    flex-direction: column;    
+    width: fit-content;
+    align-items: end;
+}
+
+.blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;     
+}
+
+#smallerheadings{
+    margin-top: 150px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#smallerheadings h5{
+    text-align: right;
+    margin-top: 0.5vw;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    
+}
+
+#herofooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 3%;
+    padding: 0 2.5vw;
+    width: 100%;    
+}
+
+#herofooter a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+}
+
+#herofooter .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #888;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#herofooter #iconset{
+    display: flex;
+    gap: 3.5px;
+
+
+}
+
+
+/* second page css code below */
+
+
+
+
+#secondpg{
+    padding-right: 120px;
+    padding-top: 200px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: #888 1px solid;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    
+}
+
+.elem h1{
+    text-transform: uppercase;
+    font-family: "General Sans";
+    opacity: 0.5;
+    font-size: 7.6vw;
+}
+
+.last{
+    border-bottom: #888 1px solid;
+}
+
+.elem img{ 
+    display: none;
+    /* opacity: 0; */
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+}
+
+
+
+/* third pade or about page */
+
+#thirdpg{
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    width: 100%;
+    gap: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    
+}
+
+#thirdpg img{
+    width: 200px;    
+}
+
+#textabout{
+    width: 25rem;
+}
+
+#textabout h5{
+    opacity: .6;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#textabout p{
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+#textabout a{
+    padding: 12px 22px;
+    color: #fff;
+    border: #fff 1px solid;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 12px;
+} 
+
+
+/* subscribe portion */
+
+#subscribe{
+    color: #fff;
+    padding: 20px 30px;
+    padding-bottom: 7vw;  
+    background-color: black;
+}
+
+#subscribe h5{
+    opacity: .6;
+    text-transform: uppercase;
+}
+
+#subscribe a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+
+
+/* FOOTER */
+
+#lastfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 40px 30px;     
+    background-color: black;
+}
+
+#leftfooter{ 
+    display: flex;
+    gap: 20px;
+}
+
+#rightfooter{
+    display: flex;
+    gap: 30px;
+}
+
+#lastfooter a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+    
